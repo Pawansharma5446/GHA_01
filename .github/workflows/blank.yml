@@ -1,22 +1,24 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Hello World
+
 on: workflow_dispatch
+
 jobs:
-  build: 
-    runs-on: ubantu-latest                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ubuntu-latest                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         cancel-timeout-minutes: 
-    steps: 
+  build:
+    runs-on: ubuntu-latest
+    steps:
       - name: build step
         run: |
-         echo "welcome to GHA1"
-         echo "Welcome to GHA2"
+          echo "welcome to GHA1"
+          echo "Welcome to GHA2"
+
   test:
-    run-on: ubantu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: test step
         run: echo "welcome to GHA3"
-  Deploy:
-    run-on: ubantu-latest
+
+  deploy:
+    runs-on: ubuntu-latest
     steps:
       - name: deploy step
         run: echo "welcome to GHA4"
