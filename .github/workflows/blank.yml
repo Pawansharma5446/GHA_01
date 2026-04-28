@@ -7,6 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: hellow step
-        run: echo "welcome to GHA"
+        run: |
+         echo "welcome to GHA1"
+         echo "Welcome to GHA2"
+        
   
   
